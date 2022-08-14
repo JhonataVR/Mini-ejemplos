@@ -1,0 +1,14 @@
+package com.mycompany.mavenproject12;
+import java.util.Scanner;
+public class Mavenproject12 {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
+        double pi= Math.PI;
+        double area,r1,radio;
+        System.out.print("Ingrese el radio: ");
+        r1=in.nextInt();
+        radio=(r1*r1)*pi;
+        System.out.println("El radio es: "+radio);
+    }
+}
