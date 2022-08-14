@@ -1,0 +1,29 @@
+package com.mycompany.mavenproject12;
+import java.util.Scanner;
+public class Mavenproject12 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
+        int d,m,a,r;
+        System.out.println("Ingrese la Dia: ");
+        d=in.nextInt();
+        System.out.println("Ingrese los Mes: ");
+        m=in.nextInt();
+        System.out.println("Ingrese los Año: ");
+        a=in.nextInt();
+        r=a%4;
+        if((m<13)&&(d<32)){
+        if((r==0)&&(d==29)&&(m==2)){                //Para el año bisiesto
+            System.out.println("CORRECTO");  
+        }
+        else if((r!=0)&&(m<13)&&(d<32)&&(m!=2)){    //Para un año normal
+            System.out.println("CORRECTO");  
+        }
+        else if((r!=0)&&(d==29)&&(m==2)){           //Si es 29/02 pero no es bisiesto
+            System.out.println("FALSO");  
+        }
+        }
+        else{                                       //Si no es una año valido
+            System.out.println("FALSO");
+        }
+    }
+}
