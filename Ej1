@@ -1,0 +1,18 @@
+package com.mycompany.mavenproject12;
+import java.util.Scanner;
+public class Mavenproject12 {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
+        int hora=360, min=60,h=0,m=0,s=0;
+        int t,t2;
+        t=in.nextInt();
+        t2=t%hora;
+        h=(int)(t/hora);
+        m=(int)(t2/min);
+        s=(int)(t2%min);
+        System.out.println("Horas: "+h);
+        System.out.println("Minutos: "+m);
+        System.out.println("Segundos: "+s);
+    }
+}
