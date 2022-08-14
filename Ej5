@@ -1,0 +1,19 @@
+package com.mycompany.mavenproject12;
+import java.util.Scanner;
+public class Mavenproject12 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
+        int a,b,c;
+        double x1,x2;
+        System.out.println("Ingrese el Primer Termino: ");
+        a=in.nextInt();
+        System.out.println("Ingrese el Segundo Termino: ");
+        b=in.nextInt();
+        System.out.println("Ingrese el Tercer Termino: ");
+        c=in.nextInt();  
+        x1=((b*-1)+(Math.sqrt(Math.pow(b,2)-(4*a*c))))/(2*a);
+        x2=((b*-1)-(Math.sqrt(Math.pow(b,2)-(4*a*c))))/(2*a);
+        System.out.println("Primera raiz: "+x1);
+        System.out.println("Segunda raiz: "+x2);
+    }
+}
