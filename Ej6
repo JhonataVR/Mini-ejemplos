@@ -1,0 +1,17 @@
+package com.mycompany.mavenproject12;
+import java.util.Scanner;
+public class Mavenproject12 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
+        int a,b;
+        double x;
+        System.out.println("Ingrese el Primer Termino: ");
+        a=in.nextInt();
+        System.out.println("Ingrese el Segundo Termino: ");
+        b=in.nextInt();  
+        if(a!=0){
+            x=(b*-1)/(a);
+        System.out.println("Primera raiz: "+x);
+        }
+    }
+}
