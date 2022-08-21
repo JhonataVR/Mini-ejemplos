@@ -1,0 +1,28 @@
+package com.mycompany.mavenproject12;
+import java.util.Scanner;
+public class Mavenproject12 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
+        int n,i;
+        boolean sw;
+        String r ="";
+        System.out.println("Numero: ");
+        n=in.nextInt();
+        sw=true;
+        i=2;
+        while(i<=n/2){
+            if(n%i==0){
+                sw=false;
+                break;
+            }
+            i++;
+        }
+        if(sw){
+            r="ES PRIMO";
+        }
+        else{
+            r="NO ES PRIMO";
+        }
+        System.out.println(r);
+    }
+}
